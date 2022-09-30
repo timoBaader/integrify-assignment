@@ -11,7 +11,6 @@ function UserDetails() {
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
       .then((res) => res.json())
       .then((data) => setUserData(data));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
