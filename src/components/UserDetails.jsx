@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Card, Button } from "react-bootstrap";
 import UserCard from "./UserCard";
 
 function UserDetails() {
