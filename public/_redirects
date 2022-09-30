@@ -1,1 +1,1 @@
-/userdetails/* /userdetails/*
+/userdetails/* param=:value /userdetails/:value
