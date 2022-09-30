@@ -14,7 +14,7 @@ function userCard({
     <Card className="text-center shadow p-3 mb-5 bg-white rounded">
       <Card.Img
         variant="top"
-        src={require("../assets/images/sample_user.png")}
+        src={require(`https://robohash.org/${name}.png"`)}
         alt="User Image"
       />
       <Card.Body>
