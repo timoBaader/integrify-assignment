@@ -24,6 +24,7 @@ function Homepage() {
           return (
             <Col key={user.id} style={{ paddingBottom: 20 }}>
               <UserCard
+                userId={user.id}
                 name={user.name}
                 username={user.username}
                 website={user.website}
