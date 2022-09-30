@@ -1,1 +1,1 @@
-/userdetails /userdetails
+/userdetails/* /userdetails/:userId
