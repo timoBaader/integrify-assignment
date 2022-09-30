@@ -1,5 +1,5 @@
 import "./App.css";
-import { Homepage, UserDetails } from "./components";
+import { Homepage, UserDetails, PageNotFound } from "./components";
 import {
   Route,
   createBrowserRouter,
@@ -11,22 +11,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route
-        path="/"
-        element={
-          <div>
-            <Homepage />
-          </div>
-        }
-      />
-      <Route
-        path="/userdetails/:userId"
-        element={
-          <div>
-            <UserDetails />
-          </div>
-        }
-      />
+      <Route path="/" element={<Homepage />} />
+      <Route path="/userdetails/:userId" element={<UserDetails />} />
+      <Route path="*" element={<PageNotFound />} />
     </Route>
   )
 );
