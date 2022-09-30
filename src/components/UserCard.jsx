@@ -12,10 +12,11 @@ function userCard({
 }) {
   return (
     <Card className="text-center shadow p-3 mb-5 bg-white rounded">
+      {/* Generating random avatars via robohash.com api */}
       <Card.Img
         variant="top"
-        src={`https://robohash.org/${name}.png"`}
-        alt="User Image"
+        src={`https://robohash.org/${name}.png`}
+        alt={require("../assets/images/sample_user.png")}
       />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
@@ -38,7 +39,8 @@ function userCard({
       )}
 
       {/* Checking if an address has been passed. If yes, then we must be in the details page and the button should 
-        therefore take the user back. If no, then we are in the homepage and the button should take the user to the details page*/}
+        therefore take the user back. If no, then we are in the homepage and the button should take the user to the details page.
+        Due to this implementation I chose not to make the Button a separate component */}
       <Card.Body>
         {address ? (
           <Button href="/">Go Back</Button>
